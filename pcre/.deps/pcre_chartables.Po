@@ -1,0 +1,1 @@
+pcre_chartables.o: pcre_chartables.c

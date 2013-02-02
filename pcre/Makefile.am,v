@@ -1,0 +1,103 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2006.02.16.17.52.59;	author dhanks;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2006.02.16.17.50.31;	author dhanks;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2006.02.16.17.45.50;	author dhanks;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2006.02.16.17.44.42;	author dhanks;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2006.02.16.17.44.13;	author dhanks;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@2c2
+< libpcre_a_SOURCES=config.h dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcrecpp.h pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre.h pcre_info.c pcre_internal.h pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcreposix.h pcre_printint.c pcre_refcount.c pcre_scanner.h pcre_stringpiece.h pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucp.h ucpinternal.h
+---
+> libpcre_a_SOURCES=config.h dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcrecpp.h pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre.h pcre_info.c pcre_internal.h pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcreposix.h pcre_printint.c pcre_refcount.c pcre_scanner.h pcre_stringpiece.h pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c
+@
+text
+@noinst_LIBRARIES=libpcre.a
+libpcre_a_SOURCES=config.h dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcrecpp.h pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre.h pcre_info.c pcre_internal.h pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcreposix.h pcre_printint.c pcre_refcount.c pcre_scanner.h pcre_stringpiece.h pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c
+CFLAGS=-O2
+CPPFLAGS=
+@
+
+
+1.4
+log
+@2c2
+< libpcre_a_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c
+---
+> libpcre_a_SOURCES=config.h dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcrecpp.h pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre.h pcre_info.c pcre_internal.h pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcreposix.h pcre_printint.c pcre_refcount.c pcre_scanner.h pcre_stringpiece.h pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucp.h ucpinternal.h
+@
+text
+@d2 1
+a2 1
+libpcre_a_SOURCES=config.h dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcrecpp.h pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre.h pcre_info.c pcre_internal.h pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcreposix.h pcre_printint.c pcre_refcount.c pcre_scanner.h pcre_stringpiece.h pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucp.h ucpinternal.h
+@
+
+
+1.3
+log
+@2c2
+< libpcre_a_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucptable.c
+---
+> libpcre_a_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c
+@
+text
+@d2 1
+a2 1
+libpcre_a_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c
+@
+
+
+1.2
+log
+@2c2
+< libpcre_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucptable.c
+---
+> libpcre_a_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucptable.c
+@
+text
+@d2 1
+a2 1
+libpcre_a_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucptable.c
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 1
+a2 1
+libpcre_SOURCES=dftables.c pcre_chartables.c pcre_compile.c pcre_config.c pcredemo.c pcre_dfa_exec.c pcre_exec.c pcre_fullinfo.c pcre_get.c pcre_globals.c pcregrep.c pcre_info.c pcre_maketables.c pcre_ord2utf8.c pcreposix.c pcre_printint.c pcre_refcount.c pcre_study.c pcre_tables.c pcretest.c pcre_try_flipped.c pcre_ucp_findchar.c pcre_valid_utf8.c pcre_version.c pcre_xclass.c ucp_findchar.c ucptable.c
+@

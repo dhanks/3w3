@@ -1,0 +1,106 @@
+AC_PREREQ(2.57)
+AC_INIT(3w3, 0.1.9, [dhanks@gmail.com])
+AC_MSG_NOTICE([Configuring 3w3 version 0.1.9])
+AC_CONFIG_SRCDIR([src/])
+AC_CANONICAL_SYSTEM
+
+AM_CONFIG_HEADER([config.h])
+AM_INIT_AUTOMAKE(3w3, 0.1.9)
+
+AC_MSG_CHECKING(operating system)
+case "$host_os" in
+        *linux*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DLINUX ${CFLAGS}"
+                ;;
+        *solaris*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DSUNOS -D__EXTENSIONS__ ${CFLAGS}"
+                ;;
+        *sunos*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DSUNOS -D__EXTENSIONS__ ${CFLAGS}"
+                ;;
+        *hpux*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DHPUX -D_HPUX_SOURCE ${CFLAGS}"
+                ;;
+        *aix*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DAIX -D_POSIX_SOURCE -D_XOPEN_SOURCE_EXTENDED -D_ALL_SOURCE ${CFLAGS}"
+                ;;
+        *freebsd*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DFREEBSD ${CFLAGS}"
+                ;;
+        *darwin*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DFREEBSD ${CFLAGS}"
+                ;;
+        *openbsd*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DOPENBSD ${CFLAGS}"
+                ;;
+        *netbsd*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DOPENBSD ${CFLAGS}"
+                ;;
+        *irix*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DIRIX ${CFLAGS}"
+                ;;
+        *cygwin*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DCYGWIN ${CFLAGS}"
+                ;;
+        *osf*)
+                AC_MSG_RESULT($host_os)
+                CFLAGS="-DOSF ${CFLAGS}"
+                ;;
+        *)
+                AC_MSG_ERROR([$host_os is currently not supported.  Please email this to dhanks@gnu.org if you wish to have $host_os supported.])
+                ;;
+esac
+
+# Checks for programs.
+AC_PROG_LIBTOOL
+AC_PROG_CC
+
+# Library checks
+AC_CHECK_LIB(socket, setsockopt)
+AC_CHECK_LIB(pthread, pthread_mutex_init, [], [AC_MSG_ERROR([library 'pthread' is required for 3w3])])
+
+# Headers
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+
+# Check funcs
+AC_FUNC_FORK
+AC_PROG_GCC_TRADITIONAL
+AC_FUNC_SELECT_ARGTYPES
+
+AC_CONFIG_FILES([Makefile src/Makefile sqlite/Makefile pcre/Makefile])
+
+AC_OUTPUT()
+
+A=`eval echo $bindir`; A=`eval echo $A`
+B=`eval echo $sbindir`; B=`eval echo $B`
+C=`eval echo $sysconfdir`; C=`eval echo $C`
+D=`eval echo $mandir`; D=`eval echo $D`
+
+echo "============================================================================="
+echo "3w3 $VERSION has been configured with the following options:"
+echo ""
+echo "            User binaries: $A"
+echo "          System binaries: $B"
+echo "      Configuration files: $C"
+echo "             Manual pages: $D"
+echo ""
+echo "                     Host: $host"
+echo "                 Compiler: $CC"
+echo "           Compiler flags: $CFLAGS"
+echo "       Preprocessor flags: $CPPFLAGS"
+echo "             Linker flags: $LDFLAGS"
+echo "                Libraries: $LIBS"
+echo ""
+echo "============================================================================="

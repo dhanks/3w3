@@ -1,0 +1,6 @@
+#define TEL_EOR		(1<<0)
+#define TEL_ECHO	(1<<1)
+#define TEL_GA		(1<<2)
+#define TEL_TTYPE	(1<<3)
+#define TEL_NAWS	(1<<4)
+#define TEL_PROMPT	(1<<5)
